@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyJanitor Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts - Inter for modern UI -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button id="theme-switch" aria-label="Toggle dark/light mode">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="210mm" height="297mm" viewBox="0 0 210 297" version="1.1" id="svg8" inkscape:version="0.92.4 5da689c313, 2019-01-14" sodipodi:docname="logo_title.svg">
+                    <defs id="defs2" />
+                    <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.7" inkscape:cx="694.53063" inkscape:cy="563.36845" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" inkscape:window-width="1920" inkscape:window-height="1026" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" />
+                    <metadata id="metadata5">
+                        <rdf:RDF>
+                            <cc:Work rdf:about="">
+                                <dc:format>image/svg+xml</dc:format>
+                                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                <dc:title></dc:title>
+                            </cc:Work>
+                        </rdf:RDF>
+                    </metadata>
+                    <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1">
+                        <path style="fill:currentColor;stroke:currentColor;stroke-width:0.26458332;stroke-opacity:1" id="path3723" d="m 191.51358,36.301836 c -3.02351,-1.945153 -6.16858,-3.704416 -9.28037,-5.505956 -3.33433,-1.957683 -6.57932,-4.06152 -9.89036,-6.057733 -1.42672,-0.783671 -2.77833,-1.696868 -4.20111,-2.485899 -0.42762,-0.147967 -0.7671,-0.448667 -1.17995,-0.620393 -0.36279,0.01999 -0.43581,-0.226514 -0.6884,-0.33052 -0.32679,-0.112952 -0.38744,-0.05737 -0.66252,-0.337688 -0.18789,-0.11632 -0.37248,-0.116257 -0.58414,-0.130173 -0.1386,-0.01078 -0.27516,0.01026 -0.41354,0.0143 -0.14937,-0.234591 -0.27407,-0.319486 -0.51118,-0.419012 -0.1055,-0.03125 -0.18017,0.02762 -0.3137,0.03486 -2.26579,0.225747 6.08029,-3.891435 4.42834,-2.513997 -0.024,0.04171 -0.0365,0.09257 -0.0719,0.125129 -0.0537,0.04935 -0.13669,0.05727 -0.19205,0.104719 -0.1,0.08568 -0.17104,0.20533 -0.26145,0.301811 -0.30395,0.446482 -0.49737,0.931185 -0.6536,1.444786 -0.56328,1.777256 -1.28367,3.501052 -1.98276,5.228147 -1.30922,3.378452 -2.87123,6.644241 -4.51806,9.868548 -1.80182,3.568023 -3.75768,7.055036 -5.65956,10.570065 -2.0098,3.747439 -4.19705,7.394802 -6.29513,11.09236 -2.03868,3.538164 -4.10178,7.063163 -6.24489,10.539338 -2.13732,3.287913 -4.30369,6.555584 -6.39158,9.875575 -2.12253,3.308678 -4.26528,6.602394 -6.26845,9.98537 -1.68352,2.879585 -3.3237,5.784339 -4.96483,8.688234 -1.35809,2.37604 -2.63191,4.797603 -4.02384,7.154263 -1.02971,1.66756 -2.12174,3.29313 -3.25888,4.88875 -0.91366,1.20437 -1.58012,2.5605 -2.32272,3.86944 -0.50229,0.89154 -1.00228,1.7903 -1.61761,2.60985 -0.47125,0.59741 -0.95634,1.18407 -1.45064,1.76263 -0.8359,0.99536 -1.65374,2.00569 -2.4516,3.0318 -1.17889,1.55531 -2.30351,3.14959 -3.49318,4.6975 -1.31624,1.7428 -2.6536,3.46863 -4.06753,5.13342 -1.12134,1.35261 -2.255221,2.69433 -3.426116,4.00439 -0.43906,0.52292 -0.946139,0.98605 -1.38485,1.50871 -0.04623,-0.2731 -0.239813,-0.56144 -0.13869,-0.81931 0.06905,-0.17608 0.355672,-0.12885 0.534583,-0.19021 0.920438,-0.31563 1.832504,-0.5531 2.790463,-0.72249 1.48348,-0.1822 3.0121,-0.0981 4.49283,0.0939 1.19512,0.0946 2.33916,0.38906 3.4707,0.76542 0.85375,0.31946 1.6401,0.77129 2.41428,1.24696 0.75352,0.49937 1.50835,0.9956 2.26228,1.49469 0.70203,0.45979 1.38181,0.96147 2.09696,1.40075 0.66515,0.44529 1.39463,0.77623 2.06787,1.2087 0.61212,0.43576 1.25335,0.83028 1.85308,1.28393 0.57247,0.41712 1.02637,0.9551 1.52949,1.44661 0.48855,0.52685 0.84516,1.15517 1.31486,1.6962 0.3952,0.48639 0.74558,1.01052 1.14989,1.48815 0.2845,0.36677 0.61132,0.71874 0.95378,1.03077 0.0663,0.0611 0.17764,-0.10992 0.19516,-0.10115 0.0611,0.0306 0.0772,0.12638 0.14218,0.14767 0.0556,0.0182 -0.0232,-0.1245 0.005,-0.17554 0.11387,-0.055 0.0576,-0.0119 0.14509,-0.15533 -1.53806,0.88913 -3.06583,1.79632 -4.61419,2.6674" />
+                        <path style="fill:currentColor;stroke:currentColor;stroke-width:0.26458332;stroke-opacity:1" id="path3727" d="m 32.215015,155.37192 c 4.888754,-0.94102 9.698845,-2.26756 14.502509,-3.56636 7.812079,-2.22152 15.415577,-5.10932 22.990357,-8.02289 6.447427,-2.38056 12.67923,-5.27523 18.899383,-8.18345 2.864503,-1.42639 5.773446,-2.75769 8.664768,-4.12728 1.183124,2.86553 0.574826,0.67599 -5.58219,4.22186 -0.666652,0.38393 -1.317503,0.8052 -2.025303,1.10661 -0.577567,0.24595 2.166411,-1.26915 1.632323,-0.93926 -1.165794,0.72007 -2.351908,1.40672 -3.527862,2.11008 -1.29772,0.80866 -2.59544,1.61731 -3.893158,2.42597 -8.4889,5.14788 -16.727617,10.69723 -24.913074,16.3113 -5.314233,3.65559 -10.537827,7.44015 -15.712501,11.29001 -1.29582,1.01635 -0.89654,0.69975 -2.034153,1.60319 -0.206817,0.16424 -0.370634,0.58005 -0.620054,0.49323 -0.255783,-0.089 0.04297,-0.86802 -0.214413,-0.78371 -1.242393,0.40697 -6.618041,3.90219 -1.965534,0.92525 8.390803,-5.52271 17.02902,-10.63831 25.855946,-15.43084 1.47919,-0.77504 2.956824,-1.55305 4.437567,-2.32512 2.130137,-1.11066 6.513045,-3.38898 8.692751,-4.46632 3.849203,-1.90252 7.767971,-3.6592 11.6778,-5.43188 4.67958,-2.1186 9.332535,-4.2933 13.936243,-6.57214 0.35501,-0.1685 0.67207,-0.50845 1.06502,-0.50551 0.21087,0.002 0.43523,0.31709 0.36574,0.51619 -0.16222,0.46478 -0.57659,0.80771 -0.94267,1.13684 -0.6137,0.55176 -1.30796,1.00719 -1.97797,1.48902 -0.7469,0.53712 -5.787422,4.01223 -6.292107,4.36079 -7.981936,5.58287 -15.998594,11.11888 -23.888937,16.83105 -5.136267,3.85505 -10.582852,7.27017 -15.752448,11.07689 -0.761069,0.59344 -1.508591,1.15954 -2.240814,1.78503 -0.229272,0.19585 -0.386461,0.50736 -0.671269,0.6064 -0.115459,0.0401 -0.01297,-0.24414 -0.01945,-0.36621 0.257796,-0.22483 1.088292,-0.80807 0.773385,-0.6745 -1.009793,0.42831 -1.927045,1.04834 -2.890565,1.57251" />
+                        <path style="fill:currentColor;stroke:currentColor;stroke-width:0.26458332;stroke-opacity:1" id="path3737" d="m 47.474763,223.65433 c -0.144165,4.44893 -0.02071,8.90387 0.117032,13.35161 0.0829,4.26135 0.97965,8.41768 2.117701,12.5034 0,0 -4.749112,2.57642 -4.749112,2.57642 v 0 c -1.041085,-4.16072 -1.953529,-8.36642 -2.048067,-12.67544 -0.163136,-4.40356 -0.296032,-8.80835 -0.428747,-13.21285 0,0 4.991193,-2.54314 4.991193,-2.54314 z" />
+                        <path style="fill:currentColor;stroke:currentColor;stroke-width:0.26458332;stroke-opacity:1" id="path3739" d="m 45.33373,218.79195 c 1.894144,-0.67392 3.794439,-1.2627 5.773642,-1.62441 2.153293,-0.32532 4.349406,-0.2683 6.49106,0.105 1.368245,0.43993 2.437493,1.00396 2.363211,2.64748 -0.01516,0.33536 -0.118885,0.66079 -0.178326,0.99117 -0.730086,1.75084 -1.930641,3.25203 -3.019547,4.78972 0,0 -5.02087,2.1771 -5.02087,2.1771 v 0 c 1.069906,-1.48054 2.182904,-2.94773 3.048697,-4.56022 0.07705,-0.27999 0.189823,-0.55252 0.231143,-0.83995 0.199925,-1.39072 -0.867497,-1.70584 -1.969745,-2.01473 -2.103054,-0.32421 -4.245554,-0.36192 -6.344584,0.0321 -1.985853,0.41418 -3.899491,1.0492 -5.805697,1.73915 0,0 4.431016,-3.44244 4.431016,-3.44244 z" />
+                        <path style="fill:currentColor;stroke:currentColor;stroke-width:0.26458332;stroke-opacity:1" id="path3741" d="m 58.564672,240.84584 c 0.572781,1.18046 0.994836,2.72018 2.158116,3.4603 0.13552,-0.0331 0.276297,-0.0495 0.406557,-0.0994 0.440065,-0.16881 0.854188,-0.39927 1.273161,-0.61517 0.282276,-0.14545 1.111769,-0.61414 0.836634,-0.4556 -4.48473,2.58424 -4.98357,2.94476 -2.927384,1.58117 1.243324,-0.88192 2.503156,-1.78839 3.316062,-3.10153 0.980922,-2.37451 -2.059392,-1.31596 5.257591,-2.99797 0.327869,-0.0754 0.0468,0.67123 0.06657,1.00707 0.02712,0.46078 0.04938,0.92183 0.07407,1.38275 0.189275,3.48567 0.225817,6.99046 -0.247706,10.45728 -0.114781,0.84035 -0.282739,1.67257 -0.424108,2.50886 -0.94859,4.26413 -2.230287,8.49032 -4.236283,12.38181 -0.714709,1.10008 -1.505951,2.26092 -2.656626,2.96058 -2.887546,1.75578 -4.569082,3.24133 -7.503176,3.76806 -1.137493,0.0132 -2.171986,-0.42399 -2.263784,-1.71283 -0.06816,-0.95702 0.247509,-1.45915 0.5829,-2.35445 0.267224,-0.50014 0.502838,-1.01854 0.801672,-1.50047 1.353904,-2.18353 3.127681,-4.09308 4.869483,-5.96522 1.515118,-1.62846 3.065243,-3.22403 4.593558,-4.84013 2.311729,-2.45565 4.707388,-4.82977 7.09472,-7.21123 0,0 4.849847,-2.00571 4.849847,-2.00571 v 0" />
+                        <path style="fill:currentColor;stroke:currentColor;stroke-width:0.26458332;stroke-opacity:1" id="path3761" d="m 83.796784,232.983 c 0.322791,2.22678 0.450815,4.46045 0.448064,6.70831 -0.03724,2.69312 -0.192024,5.38998 -0.534665,8.06208 -0.291499,2.15733 -0.864045,4.23944 -1.948209,6.13135 -1.740591,2.57148 -4.697344,4.37425 -7.73049,5.01319 -0.556662,0.0159 -1.712733,-0.083 -2.031124,-0.65098 -0.106574,-0.19013 -0.122362,-0.41839 -0.183542,-0.62757 0.02614,-0.24738 0.01836,-0.50078 0.07844,-0.74218 0.259577,-1.04315 0.940379,-1.97617 1.53198,-2.84848 1.876965,-2.76751 -0.396375,0.67207 1.494692,-2.20882 0.980773,-1.42954 1.789634,-2.97042 2.781924,-4.39234 0.614768,-0.88093 0.842158,-1.1148 1.536118,-1.94333 1.848787,-2.00726 3.996809,-3.69974 5.918711,-5.63359 1.234659,-1.32195 2.285439,-2.79513 3.469005,-4.16095 0.641781,-0.79595 1.415184,-1.45853 2.161108,-2.15007 0.203182,-0.0823 0.351055,-0.40407 0.568312,-0.46317 0.03178,-0.009 0.06686,0.026 0.09772,0.0145 1.648439,-0.61339 3.285646,-1.25655 4.92847,-1.88483 -0.967303,1.55531 -1.551574,3.30924 -1.996593,5.07522" />
+                        <path style="fill:currentColor;stroke:currentColor;stroke-width:0.26458332;stroke-opacity:1" id="path3763" d="m 140.9531,234.39399 c -1.50251,-0.0412 -3.00576,-0.0366 -4.50866,-0.0314 0,0 4.45533,-3.23699 4.45533,-3.23699 v 0 c 1.53176,0.005 3.06383,0.009 4.59522,-0.0314 0,0 -4.54189,3.29988 -4.54189,3.29988 z" />
+                        <path style="fill:currentColor;stroke:currentColor;stroke-width:0.26458332;stroke-opacity:1" id="path3765" d="m 127.62001,230.50594 c 0.48836,-1.34027 1.01607,-2.66516 1.48734,-4.01163 0,0 5.03529,-2.35324 5.03529,-2.35324 v 0 c -0.47649,1.3289 -0.99843,2.63982 -1.44375,3.97964 0,0 -5.07888,2.38523 -5.07888,2.38523 z" />
+                        <path style="fill:currentColor;stroke:currentColor;stroke-width:0.26458332;stroke-opacity:1" id="path3767" d="m 78.104559,230.39946 c 0.975458,-1.07082 1.69264,-2.33743 2.439885,-3.56827 0,0 4.979955,-2.20728 4.979955,-2.20728 v 0 c -0.720812,1.21642 -1.397222,2.46989 -2.256782,3.59656 0,0 -5.163058,2.17899 -5.163058,2.17899 z" />
+                    </g>
+                </svg>
+                <h2>PyJanitor</h2>
+            </div>
+            <div class="sidebar-content">
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="#introduction" class="active"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#features"><i class="fas fa-star"></i> Features</a></li>
+                        <li><a href="#installation"><i class="fas fa-download"></i> Installation</a></li>
+                        <li><a href="#quickstart"><i class="fas fa-bolt"></i> Quick Start</a></li>
+                        <li><a href="#examples"><i class="fas fa-code"></i> Examples</a></li>
+                        <li><a href="#resources"><i class="fas fa-book"></i> Resources</a></li>
+                        <li><a href="#community"><i class="fas fa-users"></i> Community</a></li>
+                    </ul>
+                </nav>
+                <div class="sidebar-footer">
+                    <p>v0.31.0 (March 7, 2025)</p>
+                    <div class="social-links">
+                        <a href="https://github.com/pyjanitor-devs/pyjanitor" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://pypi.org/project/pyjanitor/" target="_blank" aria-label="PyPI"><i class="fab fa-python"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button id="mobile-toggle" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content">
+            <div class="content-wrapper">
+                <header>
+                    <h1>Welcome to PyJanitor</h1>
+                    <p class="subtitle">A Python library for clean, efficient data preparation</p>
+                </header>
+
+                <section id="introduction" class="content-section">
+                    <h2><i class="fas fa-info-circle"></i> What is PyJanitor?</h2>
+                    <div class="card">
+                        <p>PyJanitor is a Python library built on top of Pandas that provides a clean, verb-based API for data cleaning and preprocessing tasks. Originally inspired by the R package "janitor," it has evolved into a powerful tool that implements the method chaining paradigm, allowing data scientists to express data processing workflows in a logical, readable sequence.</p>
+                        <p>PyJanitor simplifies common data cleaning operations such as standardizing column names, handling missing values, and transforming data formats—making data preparation more efficient and less error-prone.</p>
+                        <div class="badges">
+                            <span class="badge"><i class="fab fa-python"></i> Python 3.6+</span>
+                            <span class="badge"><i class="fas fa-table"></i> Pandas Extension</span>
+                            <span class="badge"><i class="fas fa-broom"></i> Data Cleaning</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="features" class="content-section">
+                    <h2><i class="fas fa-star"></i> Key Features</h2>
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-link-horizontal"></i></div>
+                            <h3>Method Chaining</h3>
+                            <p>Write clean, readable data processing pipelines with an intuitive verb-based syntax.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-font"></i></div>
+                            <h3>Column Cleaning</h3>
+                            <p>Automatically standardize and clean column names for consistency.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-filter"></i></div>
+                            <h3>Data Filtering</h3>
+                            <p>Efficiently filter rows based on complex conditions with a simplified syntax.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><i class="fas fa-table-cells"></i></div>
+                            <h3>Missing Data Handling</h3>
+                            <p>Comprehensive tools for identifying and managing missing values.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="installation" class="content-section">
+                    <h2><i class="fas fa-download"></i> Installation</h2>
+                    <div class="card">
+                        <div class="tabs">
+                            <button class="tab-button active" data-tab="pip">pip</button>
+                            <button class="tab-button" data-tab="conda">conda</button>
+                            <button class="tab-button" data-tab="pipenv">pipenv</button>
+                        </div>
+                        
+                        <div id="pip" class="tab-content active">
+                            <div class="code-block">
+                                <div class="code-header">
+                                    <span>Installation with pip</span>
+                                    <button class="copy-btn" data-code="pip install pyjanitor">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                                <pre><code>pip install pyjanitor</code></pre>
+                            </div>
+                        </div>
+                        
+                        <div id="conda" class="tab-content">
+                            <div class="code-block">
+                                <div class="code-header">
+                                    <span>Installation with conda</span>
+                                    <button class="copy-btn" data-code="conda install -c conda-forge pyjanitor">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                                <pre><code>conda install -c conda-forge pyjanitor</code></pre>
+                            </div>
+                        </div>
+                        
+                        <div id="pipenv" class="tab-content">
+                            <div class="code-block">
+                                <div class="code-header">
+                                    <span>Installation with pipenv</span>
+                                    <button class="copy-btn" data-code="pipenv install --pre pyjanitor">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                                <pre><code>pipenv install --pre pyjanitor</code></pre>
+                            </div>
+                        </div>
+                        
+                        <p>PyJanitor requires Python 3.6+ and works seamlessly with your existing pandas workflows.</p>
+                    </div>
+                </section>
+
+                <section id="quickstart" class="content-section">
+                    <h2><i class="fas fa-bolt"></i> Quick Start</h2>
+                    <div class="card">
+                        <p>Here's how to quickly get started with PyJanitor's method chaining approach:</p>
+                        
+                        <div class="code-block expandable">
+                            <div class="code-header">
+                                <span>Basic Usage Example</span>
+                                <div class="code-actions">
+                                    <button class="copy-btn" data-code="import pandas as pd
+import janitor as jn
+
+# Create a sample dataframe
+df = pd.DataFrame({
+    'a': [1, 2, 3],
+    'b': [4, 5, 6],
+    'Column with spaces': [7, 8, 9]
+})
+
+# Use method chaining to clean and transform data
+clean_df = (
+    df
+    .clean_names()                # Convert column names to snake_case
+    .rename_column('a', 'x')      # Rename a column
+    .add_column('z', df['a'] * 2) # Add a new column
+    .drop_columns('b')            # Remove a column
+)
+
+print(clean_df)">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                    <button class="expand-btn">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <pre><code>import pandas as pd
+import janitor as jn
+
+# Create a sample dataframe
+df = pd.DataFrame({
+    'a': [1, 2, 3],
+    'b': [4, 5, 6],
+    'Column with spaces': [7, 8, 9]
+})
+
+# Use method chaining to clean and transform data
+clean_df = (
+    df
+    .clean_names()                # Convert column names to snake_case
+    .rename_column('a', 'x')      # Rename a column
+    .add_column('z', df['a'] * 2) # Add a new column
+    .drop_columns('b')            # Remove a column
+)
+
+print(clean_df)
+</code></pre>
+                        </div>
+                        
+                        <div class="info-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <div>
+                                <h4>Pro Tip</h4>
+                                <p>The key advantage of PyJanitor is its method chaining approach, which allows you to perform multiple operations in sequence without creating intermediate variables.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="examples" class="content-section">
+                    <h2><i class="fas fa-code"></i> Example Use Cases</h2>
+                    
+                    <div class="card">
+                        <h3>Example 1: Cleaning Column Names</h3>
+                        <div class="code-block expandable">
+                            <div class="code-header">
+                                <span>Column Cleaning Example</span>
+                                <div class="code-actions">
+                                    <button class="copy-btn" data-code="import pandas as pd
+import janitor as jn
+
+# DataFrame with problematic column names
+df = pd.DataFrame({
+    'First Name': ['John', 'Jane', 'Mike'],
+    'Last-Name': ['Smith', 'Doe', 'Johnson'],
+    'email@address': ['john@example.com', 'jane@example.com', 'mike@example.com'],
+    '% complete': [85, 93, 75]
+})
+
+# Clean the column names
+cleaned_df = df.clean_names()
+print(cleaned_df.columns)
+# Output: Index(['first_name', 'last_name', 'email_address', 'percent_complete'], dtype='object')">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                    <button class="expand-btn">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <pre><code>import pandas as pd
+import janitor as jn
+
+# DataFrame with problematic column names
+df = pd.DataFrame({
+    'First Name': ['John', 'Jane', 'Mike'],
+    'Last-Name': ['Smith', 'Doe', 'Johnson'],
+    'email@address': ['john@example.com', 'jane@example.com', 'mike@example.com'],
+    '% complete': [85, 93, 75]
+})
+
+# Clean the column names
+cleaned_df = df.clean_names()
+print(cleaned_df.columns)
+# Output: Index(['first_name', 'last_name', 'email_address', 'percent_complete'], dtype='object')</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Example 2: Handling Missing Values</h3>
+                        <div class="code-block expandable">
+                            <div class="code-header">
+                                <span>Missing Data Example</span>
+                                <div class="code-actions">
+                                    <button class="copy-btn" data-code="import numpy as np
+import pandas as pd
+import janitor as jn
+
+# DataFrame with missing values
+df = pd.DataFrame({
+    'name': ['John', 'Jane', None, 'Mike'],
+    'age': [30, np.nan, 25, 40],
+    'score': [85, 92, None, 78]
+})
+
+# Handle missing values with method chaining
+cleaned_df = (
+    df
+    .remove_empty()          # Remove completely empty rows
+    .dropna(subset=['name']) # Remove rows with missing names
+    .fillna(value={'age': df['age'].mean(), 'score': 0})
+)
+
+print(cleaned_df)">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                    <button class="expand-btn">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <pre><code>import numpy as np
+import pandas as pd
+import janitor as jn
+
+# DataFrame with missing values
+df = pd.DataFrame({
+    'name': ['John', 'Jane', None, 'Mike'],
+    'age': [30, np.nan, 25, 40],
+    'score': [85, 92, None, 78]
+})
+
+# Handle missing values with method chaining
+cleaned_df = (
+    df
+    .remove_empty()          # Remove completely empty rows
+    .dropna(subset=['name']) # Remove rows with missing names
+    .fillna(value={'age': df['age'].mean(), 'score': 0})
+)
+
+print(cleaned_df)</code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="resources" class="content-section">
+                    <h2><i class="fas fa-book"></i> Latest Resources</h2>
+                    <div class="resources-container">
+                        <div class="resource-card">
+                            <div class="resource-icon"><i class="fab fa-python"></i></div>
+                            <h3>PyJanitor on PyPI</h3>
+                            <p>The official PyPI page for PyJanitor, updated March 7, 2025, containing installation instructions and project description.</p>
+                            <a href="https://pypi.org/project/pyjanitor/" class="resource-link" target="_blank">
+                                Explore <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-icon"><i class="fas fa-history"></i></div>
+                            <h3>PyJanitor Changelog</h3>
+                            <p>Comprehensive documentation of all changes and enhancements in PyJanitor, with the most recent update (v0.31.0).</p>
+                            <a href="https://pyjanitor-devs.github.io/pyjanitor/CHANGELOG/" class="resource-link" target="_blank">
+                                View Changelog <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h3>Beginner's Guide</h3>
+                            <p>A February 2025 KDNuggets tutorial walking beginners through essential PyJanitor functions and practical examples.</p>
+                            <a href="https://www.kdnuggets.com/beginners-guide-to-data-cleaning-with-pyjanitor" class="resource-link" target="_blank">
+                                Read Tutorial <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-icon"><i class="fab fa-github"></i></div>
+                            <h3>GitHub Repository</h3>
+                            <p>The official GitHub repository where you can find the source code, contribute to the project, and stay updated.</p>
+                            <a href="https://github.com/pyjanitor-devs/pyjanitor" class="resource-link" target="_blank">
+                                View Code <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="community" class="content-section">
+                    <h2><i class="fas fa-users"></i> Join the Community</h2>
+                    <div class="card">
+                        <p>PyJanitor is an open-source project that thrives on community contributions. There are several ways to get involved:</p>
+                        
+                        <div class="community-links">
+                            <a href="https://github.com/pyjanitor-devs/pyjanitor/issues" class="community-button" target="_blank">
+                                <i class="fas fa-bug"></i> Report Issues
+                            </a>
+                            <a href="https://github.com/pyjanitor-devs/pyjanitor/discussions" class="community-button" target="_blank">
+                                <i class="fas fa-comments"></i> Discussions
+                            </a>
+                            <a href="https://github.com/pyjanitor-devs/pyjanitor/pulls" class="community-button" target="_blank">
+                                <i class="fas fa-code-branch"></i> Pull Requests
+                            </a>
+                        </div>
+                        
+                        <div class="contributor-showcase">
+                            <h4>Top Contributors</h4>
+                            <div class="contributor-avatars">
+                                <a href="https://github.com/ericmjl" target="_blank" title="Eric Ma">
+                                    <img src="https://github.com/ericmjl.png" alt="Eric Ma" class="avatar" loading="lazy">
+                                </a>
+                                <a href="https://github.com/szhorvat" target="_blank" title="Szabolcs Horvát">
+                                    <img src="https://github.com/szhorvat.png" alt="Szabolcs Horvát" class="avatar" loading="lazy">
+                                </a>
+                                <a href="https://github.com/zbarry" target="_blank" title="Zach Barry">
+                                    <img src="https://github.com/zbarry.png" alt="Zach Barry" class="avatar" loading="lazy">
+                                </a>
+                                <span class="more-avatars">+80</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 PyJanitor Documentation. Created with <i class="fas fa-heart"></i> by the PyJanitor community.</p>
+            <p class="footer-links">
+                <a href="https://github.com/pyjanitor-devs/pyjanitor" target="_blank">GitHub</a> |
+                <a href="https://pypi.org/project/pyjanitor/" target="_blank">PyPI</a> |
+                <a href="https://pyjanitor-devs.github.io/pyjanitor/" target="_blank">Documentation</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        const themeSwitch = document.getElementById('theme-switch');
+        const body = document.body;
+        
+        // Check for saved theme preference or use default
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        body.classList.add(currentTheme);
+        
+        // Update button icon based on current theme
+        updateThemeIcon();
+        
+        themeSwitch.addEventListener('click', () => {
+            if (body.classList.contains('light')) {
+                body.classList.replace('light', 'dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.classList.replace('dark', 'light');
+                localStorage.setItem('theme', 'light');
+            }
+            updateThemeIcon();
+        });
+        
+        function updateThemeIcon() {
+            const icon = themeSwitch.querySelector('i');
+            if (body.classList.contains('dark')) {
+                icon.className = 'fas fa-sun';
+            } else {
+                icon.className = 'fas fa-moon';
+            }
+        }
+        
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const sidebar = document.querySelector('.sidebar');
+        
+        mobileToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+        
+        // Installation tab switching
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to the clicked button
+                button.classList.add('active');
+                
+                // Show the corresponding content
+                const tabId = button.dataset.tab;
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        // Code copy functionality
+        const copyButtons = document.querySelectorAll('.copy-btn');
+        
+        copyButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const codeToCopy = button.dataset.code;
+                navigator.clipboard.writeText(codeToCopy).then(() => {
+                    // Change button icon temporarily to show success
+                    const icon = button.querySelector('i');
+                    icon.className = 'fas fa-check';
+                    setTimeout(() => {
+                        icon.className = 'fas fa-copy';
+                    }, 2000);
+                });
+            });
+        });
+        
+        // Code expansion
+        const expandButtons = document.querySelectorAll('.expand-btn');
+        
+        expandButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const codeBlock = button.closest('.code-block');
+                codeBlock.classList.toggle('expanded');
+                
+                const icon = button.querySelector('i');
+                if (codeBlock.classList.contains('expanded')) {
+                    icon.className = 'fas fa-chevron-up';
+                } else {
+                    icon.className = 'fas fa-chevron-down';
+                }
+            });
+        });
+        
+        // Active section highlighting on scroll
+        const sections = document.querySelectorAll('.content-section');
+        const navItems = document.querySelectorAll('.nav-list a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                
+                if (window.scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href').substring(1) === current) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
